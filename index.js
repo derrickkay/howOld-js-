@@ -1,12 +1,15 @@
-// Write your function here:
+// functoin & variables
 const howOld = (age, year) => {
 
+// variables   
 let dateToday = new Date();
 let thisYear = dateToday.getFullYear();
 
-
+// variables
 const yearDifference = year - thisYear
 const newAge = age + yearDifference
+
+// if statement & else
 if (newAge > age) {
   return `You will be ${newAge} in the year ${year}`
 } else if (newAge < 0) {
@@ -16,6 +19,4 @@ if (newAge > age) {
   }
 }
 
-console.log(howOld(32, 2005)); 
-
-// testing code!
+console.log(howOld(32, 2005));  // testing code!
